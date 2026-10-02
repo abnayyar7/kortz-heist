@@ -60,6 +60,86 @@ function isValidItem(item) {
   );
 }
 
+function distributeByFloor(assignments, selectedItems, players) {
+  // Collect all selected items
+  const selectedIndices = [];
+  for (let pIdx = 0; pIdx < assignments.length; pIdx++) {
+    for (const itemIdx of assignments[pIdx]) {
+      selectedIndices.push(itemIdx);
+    }
+  }
+
+  // Group items by floor; items without Floor property go to leftover pool
+  const floorGroups = {}; // floor -> itemIndices
+  const noFloorItems = [];
+
+  for (const itemIdx of selectedIndices) {
+    const floor = selectedItems[itemIdx].Floor;
+    if (floor === undefined || floor === null) {
+      noFloorItems.push(itemIdx);
+    } else {
+      if (!floorGroups[floor]) {
+        floorGroups[floor] = [];
+      }
+      floorGroups[floor].push(itemIdx);
+    }
+  }
+
+  // Initialize new assignments
+  const newAssignments = Array.from({ length: players }, () => []);
+  const loads = Array(players).fill(0);
+
+  // Distribute items by floor group: fill one player with same-floor items first
+  const sortedFloors = Object.keys(floorGroups).sort();
+  let playerIndex = 0;
+
+  for (const floor of sortedFloors) {
+    const itemsForFloor = floorGroups[floor];
+
+    for (const itemIdx of itemsForFloor) {
+      const weight = selectedItems[itemIdx].Weight;
+
+      // Try to fit starting from current player, then overflow to next players
+      let placed = false;
+      for (let p = playerIndex; p < players; p++) {
+        if (loads[p] + weight <= PLAYER_CAPACITY) {
+          newAssignments[p].push(itemIdx);
+          loads[p] += weight;
+          placed = true;
+          if (p > playerIndex) playerIndex = p;
+          break;
+        }
+      }
+
+      if (!placed) {
+        // Fallback: return original assignments if redistribution fails
+        return assignments;
+      }
+    }
+  }
+
+  // Fill remaining capacity with no-floor items
+  for (const itemIdx of noFloorItems) {
+    const weight = selectedItems[itemIdx].Weight;
+    let placed = false;
+
+    for (let p = 0; p < players; p++) {
+      if (loads[p] + weight <= PLAYER_CAPACITY) {
+        newAssignments[p].push(itemIdx);
+        loads[p] += weight;
+        placed = true;
+        break;
+      }
+    }
+
+    if (!placed) {
+      return assignments; // Fallback: return original if can't redistribute
+    }
+  }
+
+  return newAssignments;
+}
+
 export async function POST(request) {
   let payload;
 
@@ -146,8 +226,15 @@ export async function POST(request) {
     state.profit > best.profit ? state : best,
   );
 
+  // Redistribute items by floor to group same-floor items in same player's bag
+  const floorOptimizedAssignments = distributeByFloor(
+    bestState.assignments,
+    selectedItems,
+    players,
+  );
+
   return Response.json(
-    bestState.assignments.map((assignedItems, index) => ({
+    floorOptimizedAssignments.map((assignedItems, index) => ({
       player: index + 1,
       items: assignedItems.map((itemIndex) => ({ ...selectedItems[itemIndex] })),
       totalProfit: assignedItems.reduce(
