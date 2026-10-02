@@ -166,7 +166,7 @@ export async function POST(request) {
     );
   }
 
-  const { players, selectedItems } = payload;
+  const { players, selectedItems, primaryTarget } = payload;
   const profits = selectedItems.map(
     (item) => (item["Min value"] + item["Max value"]) / 2,
   );

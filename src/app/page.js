@@ -20,6 +20,7 @@ export default function Home() {
       floor: "Basement",
     })),
   );
+  const [primaryTarget, setPrimaryTarget] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [players, setPlayers] = useState(1);
   const [results, setResults] = useState(null);
@@ -54,7 +55,7 @@ export default function Home() {
       const response = await fetch("/api/optimize", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ players, selectedItems }),
+        body: JSON.stringify({ players, selectedItems, primaryTarget }),
       });
       const data = await response.json();
 
@@ -85,6 +86,19 @@ export default function Home() {
         </header>
 
         <section aria-label="Loot inventory" className="flex flex-col gap-5">
+          <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4 dark:border-emerald-900 dark:bg-emerald-950/30">
+            <label className="flex flex-col gap-3 text-base font-semibold">
+              🎯 Primary Target
+              <input
+                className="h-12 rounded-md border border-emerald-300 bg-white px-4 text-lg text-zinc-950 outline-none transition placeholder:text-zinc-400 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-600/20 dark:border-emerald-800 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500"
+                type="text"
+                value={primaryTarget}
+                onChange={(event) => setPrimaryTarget(event.target.value)}
+                placeholder="Enter this week's primary target..."
+              />
+            </label>
+          </div>
+
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-[minmax(0,1fr)_10rem] sm:items-end">
             <label className="flex flex-col gap-2 text-sm font-semibold">
               Search inventory
@@ -226,6 +240,14 @@ export default function Home() {
                     .toLocaleString("en-US", { maximumFractionDigits: 2 })}
                 </p>
               </div>
+
+              {primaryTarget && (
+                <div className="rounded-lg border border-blue-300 bg-blue-50 px-5 py-4 dark:border-blue-900 dark:bg-blue-950/40">
+                  <p className="text-lg font-semibold text-blue-900 dark:text-blue-200">
+                    🎯 Primary Target: <span className="font-bold text-blue-950 dark:text-blue-100">{primaryTarget}</span>
+                  </p>
+                </div>
+              )}
 
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 {results.map((player, playerIndex) => {
