@@ -1,0 +1,464 @@
+    [
+  {
+    "Type": "Painting",
+    "Target": "The Great Circle Back",
+    "Min value": 140000,
+    "Max value": 162500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "Don't Forgo These Blueprints",
+    "Min value": 140000,
+    "Max value": 162500,
+    "Weight": 50
+  },
+  {
+    "Type": "Crate",
+    "Target": "Crate in the truck",
+    "Min value": 105000,
+    "Max value": 140000,
+    "Weight": 30
+  },
+  {
+    "Type": "Gemstone",
+    "Target": "Emerald Gemstone",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Gemstone",
+    "Target": "Ruby Gemstone",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Gemstone",
+    "Target": "Yellow Topaz Gemstone",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Gemstone",
+    "Target": "Tanzanite Gemstone",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Gemstone",
+    "Target": "Aquamarine Gemstone",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Gemstone",
+    "Target": "Gray Spinel Gemstone",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Gemstone",
+    "Target": "Purple Sapphire Gemstone",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Venus Statue",
+    "Target": "Venus d'Algernon (Gold)",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Venus Statue",
+    "Target": "Venus d'Algernon (Silver)",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Venus Statue",
+    "Target": "Venus d'Algernon (Bronze)",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Venus Statue",
+    "Target": "Venus d'Algernon (Ivory)",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Venus Statue",
+    "Target": "Venus d'Algernon (Marble)",
+    "Min value": 100000,
+    "Max value": 127500,
+    "Weight": 30
+  },
+  {
+    "Type": "Painting",
+    "Target": "Sod Off",
+    "Min value": 102500,
+    "Max value": 122500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "Cooked",
+    "Min value": 102500,
+    "Max value": 122500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "Do You See Me",
+    "Min value": 102500,
+    "Max value": 122500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "La Duchesse",
+    "Min value": 102500,
+    "Max value": 122500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "Explain Yourself",
+    "Min value": 102500,
+    "Max value": 122500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "The Chief",
+    "Min value": 102500,
+    "Max value": 122500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "Canis Hominem Edit",
+    "Min value": 102500,
+    "Max value": 122500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "Orange Crush",
+    "Min value": 102500,
+    "Max value": 122500,
+    "Weight": 50
+  },
+  {
+    "Type": "Horse Statue",
+    "Target": "Marble Sabino Criollo",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Horse Statue",
+    "Target": "Cremello Dutch Warmblood",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Horse Statue",
+    "Target": "Gold Turkoman",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Horse Statue",
+    "Target": "Silver Dapple Pinto",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Horse Statue",
+    "Target": "Perlino Andalusian",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Necklace",
+    "Target": "Coquard Carcanet (Red Spinel)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Necklace",
+    "Target": "Coquard Carcanet (Emerald)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Necklace",
+    "Target": "Coquard Carcanet (Sapphire)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Necklace",
+    "Target": "Coquard Carcanet (Imperial Topaz)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Necklace",
+    "Target": "Coquard Carcanet (Yellow Diamond)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Necklace",
+    "Target": "Coquard Carcanet (Tanzanite)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Skull Statue",
+    "Target": "Memento Non Mori (Emerald)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Skull Statue",
+    "Target": "Memento Non Mori (Ruby)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Skull Statue",
+    "Target": "Memento Non Mori (Gold)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Skull Statue",
+    "Target": "Memento Non Mori (Amethyst)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Skull Statue",
+    "Target": "Memento Non Mori (Sapphire)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Skull Statue",
+    "Target": "Memento Non Mori (Diamond)",
+    "Min value": 77500,
+    "Max value": 100000,
+    "Weight": 30
+  },
+  {
+    "Type": "Fertility Statue",
+    "Target": "Fertility Statue (Mahogany)",
+    "Min value": 70000,
+    "Max value": 96000,
+    "Weight": 20
+  },
+  {
+    "Type": "Fertility Statue",
+    "Target": "Fertility Statue (Gold)",
+    "Min value": 70000,
+    "Max value": 96000,
+    "Weight": 20
+  },
+  {
+    "Type": "Fertility Statue",
+    "Target": "Fertility Statue (Silver)",
+    "Min value": 70000,
+    "Max value": 96000,
+    "Weight": 20
+  },
+  {
+    "Type": "Fertility Statue",
+    "Target": "Fertility Statue (Bronze)",
+    "Min value": 70000,
+    "Max value": 96000,
+    "Weight": 20
+  },
+  {
+    "Type": "Meteorite",
+    "Target": "Meteorite Fragment",
+    "Min value": 70000,
+    "Max value": 92500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "With Friends Like These",
+    "Min value": 70000,
+    "Max value": 92500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "Het Gouden Hondje",
+    "Min value": 70000,
+    "Max value": 92500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "Swingset Study No. LXIX",
+    "Min value": 70000,
+    "Max value": 92500,
+    "Weight": 50
+  },
+  {
+    "Type": "Painting",
+    "Target": "The Hunter Becomes the Hunted",
+    "Min value": 70000,
+    "Max value": 92500,
+    "Weight": 50
+  },
+  {
+    "Type": "Ornamental Egg",
+    "Target": "\u0152uf de Coquard royal",
+    "Min value": 50000,
+    "Max value": 64000,
+    "Weight": 20
+  },
+  {
+    "Type": "Ornamental Egg",
+    "Target": "\u0152uf de Coquard enchant\u00e9",
+    "Min value": 50000,
+    "Max value": 64000,
+    "Weight": 20
+  },
+  {
+    "Type": "Ornamental Egg",
+    "Target": "\u0152uf de Coquard d\u00e9coratif",
+    "Min value": 50000,
+    "Max value": 64000,
+    "Weight": 20
+  },
+  {
+    "Type": "Ornamental Egg",
+    "Target": "\u0152uf de Coquard des ab\u00eemes",
+    "Min value": 50000,
+    "Max value": 64000,
+    "Weight": 20
+  },
+  {
+    "Type": "Ornamental Egg",
+    "Target": "\u0152uf de Coquard verdoyant",
+    "Min value": 50000,
+    "Max value": 64000,
+    "Weight": 20
+  },
+  {
+    "Type": "Ornamental Egg",
+    "Target": "\u0152uf de Coquard de vouivre",
+    "Min value": 50000,
+    "Max value": 64000,
+    "Weight": 20
+  },
+  {
+    "Type": "Ornamental Egg",
+    "Target": "\u0152uf de Coquard forestier",
+    "Min value": 50000,
+    "Max value": 64000,
+    "Weight": 20
+  },
+  {
+    "Type": "Fertility Statue",
+    "Target": "Fertility Statue (Ivory)",
+    "Min value": 42000,
+    "Max value": 53000,
+    "Weight": 10
+  },
+  {
+    "Type": "Bracelet",
+    "Target": "Art Deco Circlets",
+    "Min value": 42000,
+    "Max value": 53000,
+    "Weight": 10
+  },
+  {
+    "Type": "Rings",
+    "Target": "Coquard Rings",
+    "Min value": 28000,
+    "Max value": 35000,
+    "Weight": 10
+  },
+  {
+    "Type": "Rings",
+    "Target": "Art Deco Rings",
+    "Min value": 28000,
+    "Max value": 35000,
+    "Weight": 10
+  },
+  {
+    "Type": "Rings",
+    "Target": "Antique Rings",
+    "Min value": 28000,
+    "Max value": 35000,
+    "Weight": 10
+  },
+  {
+    "Type": "Bracelet",
+    "Target": "Coquard Bracelets",
+    "Min value": 28000,
+    "Max value": 35000,
+    "Weight": 10
+  },
+  {
+    "Type": "Bracelet",
+    "Target": "Pharaonic Bangles",
+    "Min value": 28000,
+    "Max value": 35000,
+    "Weight": 10
+  },
+  {
+    "Type": "Bracelet",
+    "Target": "Byzantine Hoops",
+    "Min value": 28000,
+    "Max value": 35000,
+    "Weight": 10
+  },
+  {
+    "Type": "Bracelet",
+    "Target": "Antique Bands",
+    "Min value": 28000,
+    "Max value": 35000,
+    "Weight": 10
+  },
+  {
+    "Type": "Deposite boxes",
+    "Target": "Deposite boxes (combined odds)",
+    "Min value": 5000,
+    "Max value": 50000,
+    "Weight": 30
+  }
+]

@@ -39,3 +39,29 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test artifacts
+.nyc_output/
+.pytest_cache/
+
+# Local env files (uncommitted)
+.env.local
+.env.*.local
+
+# Lock files (optional, comment out if you want to commit)
+# package-lock.json
+# yarn.lock
+
+# IDE workspace files
+*.sublime-workspace
+
+# OS
+Thumbs.db
